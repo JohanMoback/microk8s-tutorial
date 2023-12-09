@@ -20,10 +20,16 @@
     **microk8s enable registry**
     
     **microk8s enable istio**
-5. Start using Kubernetes!
+
+5. Set Kubectl config: 
+
+    **microk8s kubectl config view --raw > $HOME/.kube/config**
+
+
+6. Start using Kubernetes!
     
     **microk8s kubectl get all --all-namespaces**
-6. Access the Kubernetes dashboard
+7. Access the Kubernetes dashboard
     
     **microk8s dashboard-proxy**
 
