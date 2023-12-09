@@ -22,6 +22,7 @@
     **microk8s enable istio**
 
 5. Set Kubectl config: 
+    This need to be set when starting a new session of MicroK8s 
 
     **microk8s kubectl config view --raw > $HOME/.kube/config**
 
@@ -29,6 +30,7 @@
 6. Start using Kubernetes!
     
     **microk8s kubectl get all --all-namespaces**
+    
 7. Access the Kubernetes dashboard
     
     **microk8s dashboard-proxy**
